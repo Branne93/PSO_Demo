@@ -60,7 +60,7 @@ func update_velocity():
 	var random_number1 = randf()
 	randomize()
 	var random_number2 = randf()
-	velocity = velocity * inertia_weight + random_number1 * social * (particle_best - position) + random_number2 * cognitive * (swarm_best - position)
+	velocity = velocity * inertia_weight + random_number1 * cognitive * (particle_best - position) + random_number2 * social * (swarm_best - position)
 	if velocity.length() > velocity_max.length():
 		velocity = velocity.normalized() * velocity_max.length()
 	
