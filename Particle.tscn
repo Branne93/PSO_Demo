@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+
+[node name="Particle" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+position_max = Vector2( -1, -1 )
+position_min = Vector2( -1, -1 )
+velocity = Vector2( 0, 0 )
+velocity_max = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+
+
