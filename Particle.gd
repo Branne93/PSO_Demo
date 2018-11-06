@@ -9,6 +9,7 @@ var particle_best  = Vector2(0, 0)
 var particle_best_fitness = 100000
 var cognitive
 var social
+var inertia_weight
 var random1
 var random2
 var target = Vector2(0, 0)
@@ -19,6 +20,7 @@ func _ready():
 	velocity = initialize_velocity()
 	social = 1
 	cognitive = 1
+	inertia_weight = 1.1
 	swarm_best = position
 	particle_best = position
 	print("Position: " + str(position))
@@ -58,7 +60,7 @@ func update_velocity():
 	var random_number1 = randf()
 	randomize()
 	var random_number2 = randf()
-	velocity = velocity * 1.5 + random_number1 * social * (particle_best - position) + random_number2 * cognitive * (swarm_best - position)
+	velocity = velocity * inertia_weight + random_number1 * social * (particle_best - position) + random_number2 * cognitive * (swarm_best - position)
 	if velocity.length() > velocity_max.length():
 		velocity = velocity.normalized() * velocity_max.length()
 	
