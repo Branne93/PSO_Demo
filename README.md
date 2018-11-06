@@ -19,9 +19,4 @@ Clone project, start godot, import the project.godot file from the cloned projec
 # Issues
 The code is not reformatted properly, a lot of things are still left over from the math equation, x_min and x_max vectors come to mind as I have yet to find proper parameters from them.
 
-# table test
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
 
