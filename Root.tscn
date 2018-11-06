@@ -6,7 +6,6 @@
 
 [node name="Swarm" parent="." index="0" instance=ExtResource( 1 )]
 
-number_of_particles = 500
-target = Vector2( 500, 250 )
+number_of_particles = 50
 
 
