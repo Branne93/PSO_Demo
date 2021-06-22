@@ -1,7 +1,7 @@
 # PSO_Demo
 Particle swarm objects in godot 3 demo. This is usually done for particle swarm optimization but I thought it would look cool in a game engine.
 Right now the swarm is just flying to wherever the user clicks, which is pretty fun to look at. The "particles" are trying to find the closest position to the click.
-If you want them to find something else or complete some different task, just edit the evaluate_particle function in Particle.gd and _process in the Swarm.gd so it actually selected the new best particles properly.
+If you want them to find something else or complete some different task, just edit the evaluate_particle function in Particle.gd and _process in the Swarm.gd so it actually selects the new best particles properly.
 
 Please note that by particles I don't mean particles in a game physics/graphics sense, what I mean is swarm particles, which are in this demo represented by a regular node2d with a sprite. I hope this isn't confusing.
 Each particle has some parameters controlling their behaviour. These can be modified to change their efficiency and how they handle.
