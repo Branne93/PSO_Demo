@@ -6,6 +6,13 @@ If you want them to find something else or complete some different task, just ed
 Please note that by particles I don't mean particles in a game physics/graphics sense, what I mean is swarm particles, which are in this demo represented by a regular node2d with a sprite. I hope this isn't confusing.
 Each particle has some parameters controlling their behaviour. These can be modified to change their efficiency and how they handle.
 
+# Video
+
+https://user-images.githubusercontent.com/6595854/122966311-77dec300-d389-11eb-8421-73bcf131c2b9.mp4
+
+
+
+
 |	Variable 	|	Description	|
 | ------------- | ------------- |
 |social|How much each particle will follow the position of the best performing particle in the swarm	|
